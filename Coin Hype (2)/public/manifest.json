@@ -1,0 +1,42 @@
+{
+  "name": "Coin Hype - Premium Crypto Casino",
+  "short_name": "Coin Hype",
+  "description": "Play provably fair crypto casino games on Solana blockchain. Lightning-fast payouts, premium gaming experience.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0F",
+  "theme_color": "#00D9FF",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "favicon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "apple-touch-icon"
+    },
+    {
+      "src": "/apple-touch-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "entertainment", "finance"],
+  "screenshots": [
+    {
+      "src": "https://mocha-cdn.com/019a03c8-927d-7b47-8386-6b32d1946c8e/hero-banner.jpg",
+      "sizes": "1408x768",
+      "type": "image/jpeg",
+      "platform": "wide"
+    }
+  ],
+  "prefer_related_applications": false
+}

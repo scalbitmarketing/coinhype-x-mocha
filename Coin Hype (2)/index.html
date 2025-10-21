@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Coin Hype - The ultimate crypto casino and sportsbook. Play provably fair games, bet on live sports, and win big with Solana blockchain technology. Lightning-fast payouts, premium gaming experience."/>
+    <meta name="keywords" content="crypto casino, solana casino, bitcoin gambling, crypto sportsbook, blockchain gaming, provably fair, dice, crash, plinko, slots, roulette, blackjack, poker, sports betting"/>
+    <meta name="author" content="Coin Hype"/>
+    <meta name="robots" content="index, follow"/>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Coin Hype - Premium Crypto Casino & Sportsbook"/>
+    <meta property="og:description" content="Experience the future of gambling with Coin Hype. Play provably fair casino games and bet on live sports with Solana blockchain technology. Lightning-fast transactions, premium rewards."/>
+    <meta property="og:image" content="https://mocha-cdn.com/019a03c8-927d-7b47-8386-6b32d1946c8e/hero-banner.jpg"/>
+    <meta property="og:url" content="https://coinhype.mocha.app"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Coin Hype"/>
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:title" content="Coin Hype - Premium Crypto Casino & Sportsbook"/>
+    <meta property="twitter:description" content="Experience the future of gambling with Coin Hype. Play provably fair casino games and bet on live sports with Solana blockchain technology."/>
+    <meta property="twitter:image" content="https://mocha-cdn.com/019a03c8-927d-7b47-8386-6b32d1946c8e/hero-banner.jpg"/>
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-title" content="Coin Hype"/>
+    <meta name="msapplication-TileColor" content="#00D9FF"/>
+    <meta name="msapplication-config" content="/browserconfig.xml"/>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    
+    <!-- Performance -->
+    <link rel="preload" href="/src/react-app/main.tsx" as="script"/>
+    <link rel="dns-prefetch" href="https://api.coinhype.mocha.app"/>
+    
+    <title>Coin Hype - Premium Crypto Casino & Sportsbook | Play Fast, Win Big</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/react-app/main.tsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('SW registered: ', registration);
+            })
+            .catch(function(registrationError) {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Coin Hype",
+      "description": "Premium crypto casino and sportsbook powered by Solana blockchain",
+      "url": "https://coinhype.mocha.app",
+      "logo": "https://mocha-cdn.com/019a03c8-927d-7b47-8386-6b32d1946c8e/hero-banner.jpg",
+      "sameAs": [
+        "https://twitter.com/coinhype"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "description": "Play provably fair casino games and sports betting with cryptocurrency"
+      }
+    }
+    </script>
+  </body>
+</html>

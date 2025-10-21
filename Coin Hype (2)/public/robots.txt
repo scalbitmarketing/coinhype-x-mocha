@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Important pages for SEO
+Allow: /lobby
+Allow: /sports
+Allow: /games/*
+
+# Disallow private/admin areas
+Disallow: /debug
+Disallow: /frontend-debug
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://coinhype.mocha.app/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
